@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  font-family: helvetica,sans-serif;
+}
+
+/*start of document*/
+.page-bg {
+  width: 100%;
+  height: 100%;
+  background: #3f3f3f;
+}
+
+.res-wrap {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid rgba(228, 222, 222, 1);
+  background-color: #FFF;
+}
+
+.res-wrap .head {
+  width: 100%;
+  height: 320px;
+  border-bottom: 1px solid #CCC;
+}
+
+.doc-wrap,
+.doc-info {
+  float: left;
+  height: 100%;
+}
+
+.doc-wrap {
+  width: 40%;
+}
+
+.doc-info {
+  width: 59%;
+  border-left: 1px solid #CCC;
+}
+
+.doc-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.doc-info ul {
+  list-style: none;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.doc-info li {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+
+.doc-info div{
+  width: 25%;
+  min-width: 80px;
+  display: inline-block;
+}
+
+.doc-info .res-title {
+  width: 80%;
+  margin: 10% 0 1% 10%;
+}
+
+.detail {
+  width: 80%;
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+.detail h3 {
+  margin: 3% 0 5px;
+}
+
+.detail .profile {
+  line-height: 1.5em;
+}
+
+.detail .download {
+  width: 100px;
+  height: 40px;
+  margin-top: 3%;
+  background: #43ADF1;
+}
+
+/*start of 响应式设计*/
+@media screen and (max-width:1280px) {
+  .res-wrap { width: 70%; }
+}
+
+@media screen and (max-width: 980px) {
+  .doc-wrap { display: none; }
+  .doc-info { width: 100%; }
+}
+
+@media screen and (max-width: 768px) {
+  .res-wrap { width: 100%; }
+}
+
+@media screen and (max-width: 500px) {
+  .head { height: 300px; }
+}
+/*end of 响应式设计*/
+/*end of document*/
